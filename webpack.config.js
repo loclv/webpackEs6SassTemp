@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require("webpack-md5-hash");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const uglifyJsPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
   entry: { main: './src/index.js' },
   output: {
@@ -32,6 +33,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new uglifyJsPlugin(),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: 'style.[contenthash].css',
