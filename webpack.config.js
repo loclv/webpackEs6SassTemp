@@ -45,5 +45,10 @@ module.exports = {
       filename: 'index.html'
     }),
     new WebpackMd5Hash()
-  ]
+  ],
+  devServer: {
+      contentBase: 'dist',
+      watchContentBase: true,
+      port: 8080
+  }
 };
