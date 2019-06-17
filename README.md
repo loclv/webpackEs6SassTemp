@@ -7,3 +7,8 @@ https://hackernoon.com/a-tale-of-webpack-4-and-how-to-finally-configure-it-in-th
 ```
 https://itnext.io/how-to-write-a-frontend-javascript-plugin-using-es6-sass-webpack-a1c6d6fdeb71
 ```
+
+## develop
+```sh
+npm run start
+```
